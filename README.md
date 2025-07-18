@@ -37,16 +37,26 @@ It’s ideal for ETL pipelines, legacy system integrations, and large-scale data
 ## Example `.env`
 
 ```env
-SFTP_USER=your_user
-SFTP_PASSWORD=your_pass
-SFTP_HOST=sftp.server.com
+# SFTP Settings
+SFTP_USER=USER_SFTP
+SFTP_PASSWORD=PASSWORD
+SFTP_HOST=IP-HOST
 SFTP_PORT=22
-SFTP_DIR=/home/your_user/sftp/input/
-SFTP_FILENAME=datafile.txt
+SFTP_DIR=/DIR_SFTP/
+SFTP_FILENAME=.txt
 SFTP_HEADERS_FILENAME=headers.txt
-SFTP_ARCHIVE_DIR=/home/your_user/sftp/archive/
-KAFKA_BROKERS=kafka1:9092,kafka2:9092
-KAFKA_TOPIC=my-sftp-topic
+SFTP_ARCHIVE_DIR=/DIR_ARCHIVE/archive/
+
+# Kafka Settings
+KAFKA_BROKERS=IP-BROKER
+KAFKA_TOPIC=topic
+
+# Kafka SASL_SSL Auth
+KAFKA_USERNAME=usr-acl
+KAFKA_PASSWORD=BHyKqcn7rhNWTzba5MV3ex
+KAFKA_SECURITY_PROTOCOL=SASL_SSL
+KAFKA_SASL_MECHANISM=SCRAM-SHA-256
+KAFKA_CA_CERT_PATH=./certs/ca.pem
 ```
 
 
