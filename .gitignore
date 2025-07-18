@@ -1,5 +1,5 @@
 # Não subir variáveis de ambiente sensíveis!
-.env
+#.env
 
 # Binários de build
 *.exe
@@ -30,7 +30,7 @@ vendor/
 .vscode/
 
 # Arquivos de cache do Go
-*.mod
+#*.mod
 *.sum
 
 # Arquivos de sistema
