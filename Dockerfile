@@ -33,8 +33,7 @@
         echo "🔎 Conteúdo de /app/.env:" && head -n 10 /app/.env && \
         echo "🔎 Início do certificado camercatil.crt:" && head -n 5 /app/camercatil.crt
     
-    # Variável de ambiente padrão do caminho do certificado
+    #Variável de ambiente padrão do caminho do certificado
     ENV KAFKA_CA_CERT_PATH="/app/camercatil.crt"
     
-    ENTRYPOINT ["./app"]
-    
+    ENTRYPOINT ["./app"]    
